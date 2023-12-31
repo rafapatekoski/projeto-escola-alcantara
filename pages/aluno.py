@@ -92,12 +92,12 @@ if pd.isna(infoAluno["SAIDA"]):
         btn_baixar = st.download_button(
             label="Emitir Transferência",
             data=bio.getvalue(),
-            file_name=(f"{context["nome_aluno"]}_saida.docx"),
+            file_name=(f"{context['nome_aluno']}_saida.docx"),
             mime="docx",
             on_click=transferencia
         )
 else:
-    st.error(f"Aluno transferido no dia: {str(infoAluno["SAIDA"].strftime("%d/%m/%y"))}")
+    st.error(f"Aluno transferido no dia: {str(infoAluno['SAIDA'].strftime('%d/%m/%y'))}")
         # Save the document to BytesIO
 
 del st.session_state['last_selected_row'] 
