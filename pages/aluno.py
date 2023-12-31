@@ -58,10 +58,10 @@ ficha_do_aluno = st.session_state["ficha_do_aluno"]
 ficha_do_aluno = ficha_do_aluno.loc[ficha_do_aluno["RA"]==infoAluno["RA"]]
 ficha_do_aluno = ficha_do_aluno.squeeze()
 st.session_state["alunoSelecionado"] = infoAluno
-st.write(f"Nome: {infoAluno["NOME"]} -  Sala: {infoAluno["SALA"]} - Nascimento: {infoAluno["NASCIMENTO"].strftime("%d/%m/%Y")} - {infoAluno["LAUDO"]}")
-st.write(f"Contatos: {ficha_do_aluno["TEL1"]} - {ficha_do_aluno["TEL2"]} - {ficha_do_aluno["TEL3"]}")
-st.write(f"Endereço: {ficha_do_aluno["ENDERECO"]} - ROTA: {ficha_do_aluno["ROTA"]}")
-st.write(f"Observações: {ficha_do_aluno["OBSERVACOES"]}")
+st.write(f"Nome: {infoAluno['NOME']} - Sala: {infoAluno['SALA']} - Nascimento: {infoAluno['NASCIMENTO'].strftime('%d/%m/%Y')} - {infoAluno['LAUDO']}")
+st.write(f"Contatos: {ficha_do_aluno['TEL1']} - {ficha_do_aluno['TEL2']} - {ficha_do_aluno['TEL3']}")
+st.write(f"Endereço: {ficha_do_aluno['ENDERECO']} - ROTA: {ficha_do_aluno['ROTA']}")
+st.write(f"Observações: {ficha_do_aluno['OBSERVACOES']}")
 st.session_state["ocorrencia"] = True
     
 sala = str(infoAluno["SALA"])
