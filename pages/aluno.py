@@ -8,7 +8,7 @@ from pathlib import Path
 from datetime import datetime
 pasta_datasets = Path(__file__).parent.parent / 'datasets/'
 pasta_documentos = Path(__file__).parent.parent / 'documentos/'
-template_path = str(pasta_documentos)+"\\declaracaotransferencia.docx"
+template_path = str(pasta_documentos)+"declaracaotransferencia.docx"
 # Path to the Word document template
 #construir download aqui
     #funcoes transferencia
