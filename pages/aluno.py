@@ -7,8 +7,10 @@ from docxtpl import DocxTemplate
 from pathlib import Path
 from datetime import datetime
 pasta_datasets = Path(__file__).parent.parent / 'datasets/'
-pasta_documentos = Path(__file__).parent.parent / 'documentos/'
-template_path = str(pasta_documentos)+"declaracaotransferencia.docx"
+pasta_documentos = Path(__file__).parent.parent / 'documentos'
+template_path = pasta_documentos / 'declaracaotransferencia.docx'
+# Agora template_path é um objeto Path, mas você pode convertê-lo para uma string se necessário
+template_path_str = str(template_path)
 # Path to the Word document template
 #construir download aqui
     #funcoes transferencia
